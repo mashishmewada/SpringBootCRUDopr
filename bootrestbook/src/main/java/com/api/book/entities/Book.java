@@ -31,11 +31,11 @@ public class Book {
 	
 	private String title;
 	
-	
+	//@Column(name = "authorBook_id")
 	@OneToOne(cascade = CascadeType.ALL)
 	private Author author;
 	
-	
+	//@Column(name = "pageBook_id")
 	@OneToMany(cascade = CascadeType.ALL)
 	private Set<Page> pages;
 
